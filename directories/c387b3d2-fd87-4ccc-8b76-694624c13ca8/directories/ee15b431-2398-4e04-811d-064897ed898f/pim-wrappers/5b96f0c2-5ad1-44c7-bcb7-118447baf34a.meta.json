@@ -1,0 +1,17 @@
+{
+  "iri": "a8da1280-161e-4486-b785-6b563c900215/457ed0b2-7a34-4058-9463-486b7b934d82/6b91b978-66ef-465e-a341-f27b0c31fb03/1377196b-444f-4fc6-b145-c2543df50ac6",
+  "projectIri": "5b96f0c2-5ad1-44c7-bcb7-118447baf34a",
+  "types": [
+    "https://dataspecer.com/core/model-descriptor/pim-store-wrapper"
+  ],
+  "userMetadata": {
+    "documentBaseUrl": "https://datagov-cz.github.io/cache-slovniku/foaf.ttl",
+    "label": {
+      "en": "foaf"
+    }
+  },
+  "metadata": {},
+  "_version": 1,
+  "_exportVersion": 2,
+  "_exportedBy": "http://localhost:3100"
+}

@@ -1,0 +1,470 @@
+{
+  "type": "http://dataspecer.com/resources/local/semantic-model",
+  "modelId": "275a4cf1-7f70-4f10-a95c-8340e1b19ea1",
+  "modelAlias": "StatDCAT-AP 3.0.0 draft",
+  "baseIri": "https://statdcat-ap/#",
+  "entities": {
+    "w4a6elj2wtbmo6vv69x": {
+      "ends": [
+        {
+          "iri": null,
+          "name": {},
+          "description": {},
+          "concept": "http://www.w3.org/ns/dcat#Catalog",
+          "externalDocumentationUrl": null
+        },
+        {
+          "name": {
+            "en": "Dataflow DSD"
+          },
+          "description": {},
+          "concept": "http://purl.org/linked-data/cube#DataStructureDefinition",
+          "iri": "dataflowDsd",
+          "externalDocumentationUrl": null
+        }
+      ],
+      "id": "w4a6elj2wtbmo6vv69x",
+      "type": [
+        "relationship"
+      ],
+      "iri": null,
+      "name": {},
+      "description": {}
+    },
+    "iiysqzpu4omo6vvfa4": {
+      "ends": [
+        {
+          "iri": null,
+          "name": {},
+          "description": {},
+          "concept": "http://www.w3.org/ns/dcat#Catalog",
+          "externalDocumentationUrl": null
+        },
+        {
+          "name": {
+            "en": "Dataflow category"
+          },
+          "description": {},
+          "concept": "http://www.w3.org/2004/02/skos/core#Concept",
+          "iri": "dataflowCategory",
+          "externalDocumentationUrl": null
+        }
+      ],
+      "id": "iiysqzpu4omo6vvfa4",
+      "type": [
+        "relationship"
+      ],
+      "iri": null,
+      "name": {},
+      "description": {}
+    },
+    "sosivu9utttmo6vw476": {
+      "ends": [
+        {
+          "iri": null,
+          "name": {},
+          "description": {},
+          "concept": "http://www.w3.org/ns/dcat#Dataset",
+          "externalDocumentationUrl": null
+        },
+        {
+          "name": {
+            "en": "data structure definition"
+          },
+          "description": {},
+          "concept": "http://purl.org/linked-data/cube#DataStructureDefinition",
+          "iri": "dataStructureDefinition",
+          "externalDocumentationUrl": null
+        }
+      ],
+      "id": "sosivu9utttmo6vw476",
+      "type": [
+        "relationship"
+      ],
+      "iri": null,
+      "name": {},
+      "description": {}
+    },
+    "su80pkkoynmo6xu7to": {
+      "iri": "Dataflow",
+      "profiling": [
+        "https://mff-uk.github.io/specifications/dcat-ap#Catalogue"
+      ],
+      "name": {
+        "en": "Dataflow",
+        "it": "Catalogo",
+        "fr": "Catalogue",
+        "es": "Catálogo",
+        "cs": "Katalog",
+        "el": "Κατάλογος",
+        "ar": "فهرس قوائم البيانات",
+        "ja": "カタログ",
+        "da": "Katalog"
+      },
+      "nameFromProfiled": null,
+      "description": {
+        "en": "A catalogue or repository that hosts the Datasets or Data Services being described.",
+        "es": "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos).",
+        "it": "Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati).",
+        "fr": "Une collection élaborée de métadonnées sur les jeux de données",
+        "cs": "Řízená kolekce metadat o datových sadách a datových službách",
+        "el": "Μια επιμελημένη συλλογή μεταδεδομένων περί συνόλων δεδομένων",
+        "ar": "مجموعة من توصيفات قوائم البيانات",
+        "ja": "データ・カタログは、データセットに関するキュレートされたメタデータの集合です。",
+        "da": "En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). "
+      },
+      "descriptionFromProfiled": "https://mff-uk.github.io/specifications/dcat-ap#Catalogue",
+      "usageNote": {
+        "en": "A Web-based data catalog is typically represented as a single instance of this class.\nDatasets and data services are examples of resources in the context of a data catalog."
+      },
+      "usageNoteFromProfiled": "https://mff-uk.github.io/specifications/dcat-ap#Catalogue",
+      "externalDocumentationUrl": null,
+      "tags": [],
+      "id": "su80pkkoynmo6xu7to",
+      "type": [
+        "class-profile"
+      ]
+    },
+    "bhcyxowa82imo6xucfu": {
+      "iri": "Dataset",
+      "profiling": [
+        "https://mff-uk.github.io/specifications/dcat-ap#Dataset"
+      ],
+      "name": {
+        "es": "Conjunto de datos",
+        "en": "Dataset",
+        "it": "Dataset",
+        "cs": "Datová sada",
+        "fr": "Jeu de données",
+        "el": "Σύνολο Δεδομένων",
+        "ar": "قائمة بيانات",
+        "ja": "データセット",
+        "da": "Datasæt"
+      },
+      "nameFromProfiled": "https://mff-uk.github.io/specifications/dcat-ap#Dataset",
+      "description": {
+        "ja": "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。",
+        "en": "A conceptual entity that represents the information published.",
+        "cs": "Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.",
+        "it": "Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati.",
+        "es": "Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos.",
+        "fr": "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats.",
+        "el": "Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές.",
+        "ar": "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها",
+        "da": "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."
+      },
+      "descriptionFromProfiled": "https://mff-uk.github.io/specifications/dcat-ap#Dataset",
+      "usageNote": {
+        "en": "If a Dataset is used as part of a Dataset Series, the usage of the properties listed below must be coherent with the associated Dataset Series. For this usage, consult the guidelines in section 14. General usage guidelines."
+      },
+      "usageNoteFromProfiled": "https://mff-uk.github.io/specifications/dcat-ap#Dataset",
+      "externalDocumentationUrl": null,
+      "tags": [],
+      "id": "bhcyxowa82imo6xucfu",
+      "type": [
+        "class-profile"
+      ]
+    },
+    "3qi60uyfjxfmo6xy03n": {
+      "iri": "DataStructureDefinition",
+      "profiling": [
+        "http://purl.org/linked-data/cube#DataStructureDefinition"
+      ],
+      "name": {
+        "en": "Data structure definition"
+      },
+      "nameFromProfiled": "http://purl.org/linked-data/cube#DataStructureDefinition",
+      "description": {
+        "en": "Defines the structure of a DataSet or slice"
+      },
+      "descriptionFromProfiled": "http://purl.org/linked-data/cube#DataStructureDefinition",
+      "usageNote": {},
+      "usageNoteFromProfiled": null,
+      "externalDocumentationUrl": null,
+      "tags": [],
+      "id": "3qi60uyfjxfmo6xy03n",
+      "type": [
+        "class-profile"
+      ]
+    },
+    "hbwsjd7e70fmo6y4qz4": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": null,
+          "description": null,
+          "descriptionFromProfiled": null,
+          "iri": null,
+          "cardinality": null,
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "su80pkkoynmo6xu7to"
+        },
+        {
+          "name": {
+            "es": "conjunto de datos",
+            "en": "dataset",
+            "it": "dataset",
+            "cs": "datová sada",
+            "fr": "jeu de données",
+            "el": "σύνολο δεδομένων",
+            "ar": "قائمة بيانات",
+            "ja": "データセット",
+            "da": "datasæt"
+          },
+          "nameFromProfiled": "https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset",
+          "description": {
+            "en": "A Dataset that is part of the Catalogue.",
+            "cs": "Kolekce dat, která je katalogizována v katalogu.",
+            "fr": "Relie un catalogue à un jeu de données faisant partie de ce catalogue.",
+            "es": "Un conjunto de datos que se lista en el catálogo.",
+            "it": "Una raccolta di dati che è elencata nel catalogo.",
+            "el": "Συνδέει έναν κατάλογο με ένα σύνολο δεδομένων το οποίο ανήκει στον εν λόγω κατάλογο.",
+            "ar": "تربط الفهرس بقائمة بيانات ضمنه",
+            "ja": "カタログの一部であるデータセット。",
+            "da": "En samling af data som er opført i kataloget."
+          },
+          "descriptionFromProfiled": "https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset",
+          "iri": "Catalogue.dataset",
+          "cardinality": [
+            1,
+            null
+          ],
+          "usageNote": {
+            "en": "As empty Catalogues are usually indications of problems, this property should be combined with the property service to implement an empty Catalogue check."
+          },
+          "usageNoteFromProfiled": "https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset",
+          "profiling": [
+            "https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "bhcyxowa82imo6xucfu"
+        }
+      ],
+      "id": "hbwsjd7e70fmo6y4qz4",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "8it5jcc6x2kmo6y52w4": {
+      "iri": "Concept",
+      "profiling": [
+        "https://mff-uk.github.io/specifications/dcat-ap#Concept"
+      ],
+      "name": {
+        "en": "Concept"
+      },
+      "nameFromProfiled": "https://mff-uk.github.io/specifications/dcat-ap#Concept",
+      "description": {
+        "en": "An idea or notion; a unit of thought."
+      },
+      "descriptionFromProfiled": "https://mff-uk.github.io/specifications/dcat-ap#Concept",
+      "usageNote": {
+        "en": "In DCAT-AP, a Concept is used to denote codes within a codelist. In section 10. Controlled Vocabularies the expectations are elaborated in more detail."
+      },
+      "usageNoteFromProfiled": "https://mff-uk.github.io/specifications/dcat-ap#Concept",
+      "externalDocumentationUrl": null,
+      "tags": [],
+      "id": "8it5jcc6x2kmo6y52w4",
+      "type": [
+        "class-profile"
+      ]
+    },
+    "3k0yyu4l5w3mo6y6d7i": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": null,
+          "description": null,
+          "descriptionFromProfiled": null,
+          "iri": null,
+          "cardinality": null,
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "su80pkkoynmo6xu7to"
+        },
+        {
+          "name": {
+            "en": "Dataflow category"
+          },
+          "nameFromProfiled": "iiysqzpu4omo6vvfa4",
+          "description": {},
+          "descriptionFromProfiled": "iiysqzpu4omo6vvfa4",
+          "iri": "Dataflow.dataflowCategory",
+          "cardinality": [
+            1,
+            null
+          ],
+          "usageNote": {},
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "iiysqzpu4omo6vvfa4"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "8it5jcc6x2kmo6y52w4"
+        }
+      ],
+      "id": "3k0yyu4l5w3mo6y6d7i",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "2ghnusvvcgimo6y6nhh": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": null,
+          "description": null,
+          "descriptionFromProfiled": null,
+          "iri": null,
+          "cardinality": null,
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "su80pkkoynmo6xu7to"
+        },
+        {
+          "name": {
+            "en": "Dataflow DSD"
+          },
+          "nameFromProfiled": "w4a6elj2wtbmo6vv69x",
+          "description": {},
+          "descriptionFromProfiled": "w4a6elj2wtbmo6vv69x",
+          "iri": "Dataflow.dataflowDsd",
+          "cardinality": [
+            1,
+            1
+          ],
+          "usageNote": {},
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "w4a6elj2wtbmo6vv69x"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "3qi60uyfjxfmo6xy03n"
+        }
+      ],
+      "id": "2ghnusvvcgimo6y6nhh",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "8k2ev131m34mo6y6u9n": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": null,
+          "description": null,
+          "descriptionFromProfiled": null,
+          "iri": null,
+          "cardinality": null,
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "bhcyxowa82imo6xucfu"
+        },
+        {
+          "name": {
+            "en": "data structure definition"
+          },
+          "nameFromProfiled": "sosivu9utttmo6vw476",
+          "description": {},
+          "descriptionFromProfiled": "sosivu9utttmo6vw476",
+          "iri": "Dataset.dataStructureDefinition",
+          "cardinality": [
+            0,
+            1
+          ],
+          "usageNote": {},
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "sosivu9utttmo6vw476"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "3qi60uyfjxfmo6xy03n"
+        }
+      ],
+      "id": "8k2ev131m34mo6y6u9n",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "n5cuzoulu9mo6y7bod": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": null,
+          "description": null,
+          "descriptionFromProfiled": null,
+          "iri": null,
+          "cardinality": null,
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "bhcyxowa82imo6xucfu"
+        },
+        {
+          "name": {
+            "es": "tema",
+            "it": "tema",
+            "en": "theme",
+            "fr": "thème",
+            "cs": "téma",
+            "el": "Θέμα",
+            "ar": "التصنيف",
+            "ja": "テーマ/カテゴリー",
+            "da": "emne"
+          },
+          "nameFromProfiled": "https://mff-uk.github.io/specifications/dcat-ap#Dataset.theme",
+          "description": {
+            "en": "A category of the Dataset.",
+            "cs": "Hlavní téma zdroje. Zdroj může mít více témat.",
+            "it": "La categoria principale della risorsa. Una risorsa può avere più temi.",
+            "es": "La categoría principal del recurso. Un recurso puede tener varios temas.",
+            "fr": "La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes.",
+            "el": "Η κύρια κατηγορία του συνόλου δεδομένων. Ένα σύνολο δεδομένων δύναται να έχει πολλαπλά θέματα.",
+            "ar": "التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد.",
+            "ja": "データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。",
+            "da": "Et centralt emne for ressourcen. En ressource kan have flere centrale emner."
+          },
+          "descriptionFromProfiled": "https://mff-uk.github.io/specifications/dcat-ap#Dataset.theme",
+          "iri": "Dataset.theme",
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": {
+            "en": "A Dataset may be associated with multiple themes."
+          },
+          "usageNoteFromProfiled": "https://mff-uk.github.io/specifications/dcat-ap#Dataset.theme",
+          "profiling": [
+            "https://mff-uk.github.io/specifications/dcat-ap#Dataset.theme"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "8it5jcc6x2kmo6y52w4"
+        }
+      ],
+      "id": "n5cuzoulu9mo6y7bod",
+      "type": [
+        "relationship-profile"
+      ]
+    }
+  }
+}

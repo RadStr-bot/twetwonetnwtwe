@@ -1,0 +1,1373 @@
+{
+  "type": "https://dataspecer.com/core/model-descriptor/pim-store-wrapper",
+  "id": "2l1ws",
+  "alias": "qb",
+  "pimStore": {
+    "resources": {
+      "http://purl.org/linked-data/cube#dataSet#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#dataSet#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#Observation",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#dataSet": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#dataSet",
+        "pimInterpretation": "http://purl.org/linked-data/cube#dataSet",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "data set"
+        },
+        "pimHumanDescription": {
+          "en": "indicates the data set of which this observation is a part"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#dataSet#domain",
+          "http://purl.org/linked-data/cube#dataSet#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#dataSet#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#dataSet#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#DataSet",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#observation#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#observation#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#ObservationGroup",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#observation": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#observation",
+        "pimInterpretation": "http://purl.org/linked-data/cube#observation",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "observation"
+        },
+        "pimHumanDescription": {
+          "en": "indicates a observation contained within this slice of the data set"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#observation#domain",
+          "http://purl.org/linked-data/cube#observation#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#observation#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#observation#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#Observation",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#observationGroup#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#observationGroup#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://www.w3.org/2002/07/owl#Thing",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#observationGroup": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#observationGroup",
+        "pimInterpretation": "http://purl.org/linked-data/cube#observationGroup",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "observation group"
+        },
+        "pimHumanDescription": {
+          "en": "Indicates a group of observations. The domain of this property is left open so that a group may be attached to different resources and need not be restricted to a single DataSet"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#observationGroup#domain",
+          "http://purl.org/linked-data/cube#observationGroup#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#observationGroup#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#observationGroup#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#ObservationGroup",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#slice#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#slice#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#DataSet",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#slice": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#slice",
+        "pimInterpretation": "http://purl.org/linked-data/cube#slice",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "slice"
+        },
+        "pimHumanDescription": {
+          "en": "Indicates a subset of a DataSet defined by fixing a subset of the dimensional values"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#slice#domain",
+          "http://purl.org/linked-data/cube#slice#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#observationGroup"
+        ]
+      },
+      "http://purl.org/linked-data/cube#slice#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#slice#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#Slice",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#measureType#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#measureType#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://www.w3.org/2002/07/owl#Thing",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#measureType": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#measureType",
+        "pimInterpretation": "http://purl.org/linked-data/cube#measureType",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "measure type"
+        },
+        "pimHumanDescription": {
+          "en": "Generic measure dimension, the value of this dimension indicates which measure (from the set of measures in the DSD) is being given by the obsValue (or other primary measure)"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#measureType#domain",
+          "http://purl.org/linked-data/cube#measureType#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#measureType#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#measureType#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#MeasureProperty",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#structure#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#structure#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#DataSet",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#structure": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#structure",
+        "pimInterpretation": "http://purl.org/linked-data/cube#structure",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "structure"
+        },
+        "pimHumanDescription": {
+          "en": "indicates the structure to which this data set conforms"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#structure#domain",
+          "http://purl.org/linked-data/cube#structure#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#structure#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#structure#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#DataStructureDefinition",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#component#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#component#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#DataStructureDefinition",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#component": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#component",
+        "pimInterpretation": "http://purl.org/linked-data/cube#component",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "component specification"
+        },
+        "pimHumanDescription": {
+          "en": "indicates a component specification which is included in the structure of the dataset"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#component#domain",
+          "http://purl.org/linked-data/cube#component#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#component#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#component#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#ComponentSpecification",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#componentProperty#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#componentProperty#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#ComponentSet",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#componentProperty": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#componentProperty",
+        "pimInterpretation": "http://purl.org/linked-data/cube#componentProperty",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "component"
+        },
+        "pimHumanDescription": {
+          "en": "indicates a ComponentProperty (i.e. attribute/dimension) expected on a DataSet, or a dimension fixed in a SliceKey"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#componentProperty#domain",
+          "http://purl.org/linked-data/cube#componentProperty#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#componentProperty#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#componentProperty#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#ComponentProperty",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#order": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Attribute"
+        ],
+        "iri": "http://purl.org/linked-data/cube#order",
+        "pimInterpretation": "http://purl.org/linked-data/cube#order",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "order"
+        },
+        "pimHumanDescription": {
+          "en": "indicates a priority order for the components of sets with this structure, used to guide presentations - lower order numbers come before higher numbers, un-numbered components come last"
+        },
+        "pimDatatype": "http://www.w3.org/2001/XMLSchema#int",
+        "pimLanguageStringRequiredLanguages": [],
+        "pimOwnerClass": "http://purl.org/linked-data/cube#ComponentSpecification",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null,
+        "pimRegex": null,
+        "pimExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#componentRequired": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Attribute"
+        ],
+        "iri": "http://purl.org/linked-data/cube#componentRequired",
+        "pimInterpretation": "http://purl.org/linked-data/cube#componentRequired",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "component required"
+        },
+        "pimHumanDescription": {
+          "en": "Indicates whether a component property is required (true) or optional (false) in the context of a DSD. Only applicable\n    to components correspond to an attribute. Defaults to false (optional)."
+        },
+        "pimDatatype": "http://www.w3.org/2001/XMLSchema#boolean",
+        "pimLanguageStringRequiredLanguages": [],
+        "pimOwnerClass": "http://purl.org/linked-data/cube#ComponentSpecification",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null,
+        "pimRegex": null,
+        "pimExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#componentAttachment#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#componentAttachment#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#ComponentSpecification",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#componentAttachment": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#componentAttachment",
+        "pimInterpretation": "http://purl.org/linked-data/cube#componentAttachment",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "component attachment"
+        },
+        "pimHumanDescription": {
+          "en": "Indicates the level at which the component property should be attached, this might an qb:DataSet, qb:Slice or qb:Observation, or a qb:MeasureProperty."
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#componentAttachment#domain",
+          "http://purl.org/linked-data/cube#componentAttachment#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#componentAttachment#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#componentAttachment#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://www.w3.org/2000/01/rdf-schema#Class",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#dimension#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#dimension#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://www.w3.org/2002/07/owl#Thing",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#dimension": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#dimension",
+        "pimInterpretation": "http://purl.org/linked-data/cube#dimension",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "dimension"
+        },
+        "pimHumanDescription": {
+          "en": "An alternative to qb:componentProperty which makes explicit that the component is a dimension"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#dimension#domain",
+          "http://purl.org/linked-data/cube#dimension#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#componentProperty"
+        ]
+      },
+      "http://purl.org/linked-data/cube#dimension#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#dimension#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#DimensionProperty",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#measure#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#measure#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://www.w3.org/2002/07/owl#Thing",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#measure": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#measure",
+        "pimInterpretation": "http://purl.org/linked-data/cube#measure",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "measure"
+        },
+        "pimHumanDescription": {
+          "en": "An alternative to qb:componentProperty which makes explicit that the component is a measure"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#measure#domain",
+          "http://purl.org/linked-data/cube#measure#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#componentProperty"
+        ]
+      },
+      "http://purl.org/linked-data/cube#measure#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#measure#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#MeasureProperty",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#attribute#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#attribute#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://www.w3.org/2002/07/owl#Thing",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#attribute": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#attribute",
+        "pimInterpretation": "http://purl.org/linked-data/cube#attribute",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "attribute"
+        },
+        "pimHumanDescription": {
+          "en": "An alternative to qb:componentProperty which makes explicit that the component is a attribute"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#attribute#domain",
+          "http://purl.org/linked-data/cube#attribute#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#componentProperty"
+        ]
+      },
+      "http://purl.org/linked-data/cube#attribute#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#attribute#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#AttributeProperty",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#measureDimension#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#measureDimension#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://www.w3.org/2002/07/owl#Thing",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#measureDimension": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#measureDimension",
+        "pimInterpretation": "http://purl.org/linked-data/cube#measureDimension",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "measure dimension"
+        },
+        "pimHumanDescription": {
+          "en": "An alternative to qb:componentProperty which makes explicit that the component is a measure dimension"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#measureDimension#domain",
+          "http://purl.org/linked-data/cube#measureDimension#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#componentProperty"
+        ]
+      },
+      "http://purl.org/linked-data/cube#measureDimension#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#measureDimension#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#DimensionProperty",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#sliceStructure#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#sliceStructure#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#Slice",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#sliceStructure": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#sliceStructure",
+        "pimInterpretation": "http://purl.org/linked-data/cube#sliceStructure",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "slice structure"
+        },
+        "pimHumanDescription": {
+          "en": "indicates the sub-key corresponding to this slice"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#sliceStructure#domain",
+          "http://purl.org/linked-data/cube#sliceStructure#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#sliceStructure#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#sliceStructure#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#SliceKey",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#sliceKey#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#sliceKey#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#DataStructureDefinition",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#sliceKey": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#sliceKey",
+        "pimInterpretation": "http://purl.org/linked-data/cube#sliceKey",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "slice key"
+        },
+        "pimHumanDescription": {
+          "en": "indicates a slice key which is used for slices in this dataset"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#sliceKey#domain",
+          "http://purl.org/linked-data/cube#sliceKey#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#sliceKey#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#sliceKey#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#SliceKey",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#concept#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#concept#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#ComponentProperty",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#concept": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#concept",
+        "pimInterpretation": "http://purl.org/linked-data/cube#concept",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "concept"
+        },
+        "pimHumanDescription": {
+          "en": "gives the concept which is being measured or indicated by a ComponentProperty"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#concept#domain",
+          "http://purl.org/linked-data/cube#concept#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#concept#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#concept#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://www.w3.org/2004/02/skos/core#Concept",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#codeList#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#codeList#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#CodedProperty",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#codeList": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#codeList",
+        "pimInterpretation": "http://purl.org/linked-data/cube#codeList",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "code list"
+        },
+        "pimHumanDescription": {
+          "en": "gives the code list associated with a CodedProperty"
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#codeList#domain",
+          "http://purl.org/linked-data/cube#codeList#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#codeList#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#codeList#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "n3-29",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#hierarchyRoot#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#hierarchyRoot#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#HierarchicalCodeList",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#hierarchyRoot": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#hierarchyRoot",
+        "pimInterpretation": "http://purl.org/linked-data/cube#hierarchyRoot",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {},
+        "pimHumanDescription": {
+          "en": "Specifies a root of the hierarchy. A hierarchy may have multiple roots but must have at least one."
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#hierarchyRoot#domain",
+          "http://purl.org/linked-data/cube#hierarchyRoot#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": null,
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#hierarchyRoot#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#hierarchyRoot#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://www.w3.org/2002/07/owl#Thing",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#parentChildProperty#domain": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#parentChildProperty#domain",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://purl.org/linked-data/cube#HierarchicalCodeList",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#parentChildProperty": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Association"
+        ],
+        "iri": "http://purl.org/linked-data/cube#parentChildProperty",
+        "pimInterpretation": "http://purl.org/linked-data/cube#parentChildProperty",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "parent-child property"
+        },
+        "pimHumanDescription": {
+          "en": "Specifies a property which relates a parent concept in the hierarchy to a child concept."
+        },
+        "pimEnd": [
+          "http://purl.org/linked-data/cube#parentChildProperty#domain",
+          "http://purl.org/linked-data/cube#parentChildProperty#range"
+        ],
+        "pimIsOriented": true,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment",
+        "pimExtends": []
+      },
+      "http://purl.org/linked-data/cube#parentChildProperty#range": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/AssociationEnd"
+        ],
+        "iri": "http://purl.org/linked-data/cube#parentChildProperty#range",
+        "pimInterpretation": null,
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": null,
+        "pimHumanDescription": null,
+        "pimPart": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "pimCardinalityMin": null,
+        "pimCardinalityMax": null
+      },
+      "http://purl.org/linked-data/cube#DataSet": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#DataSet",
+        "pimInterpretation": "http://purl.org/linked-data/cube#DataSet",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Data set"
+        },
+        "pimHumanDescription": {
+          "en": "Represents a collection of observations, possibly organized into various slices, conforming to some common dimensional structure."
+        },
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#Attachable",
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://purl.org/linked-data/cube#Observation": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#Observation",
+        "pimInterpretation": "http://purl.org/linked-data/cube#Observation",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Observation"
+        },
+        "pimHumanDescription": {
+          "en": "A single observation in the cube, may have one or more associated measured values"
+        },
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#Attachable",
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://purl.org/linked-data/cube#ObservationGroup": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#ObservationGroup",
+        "pimInterpretation": "http://purl.org/linked-data/cube#ObservationGroup",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Observation Group"
+        },
+        "pimHumanDescription": {
+          "en": "A, possibly arbitrary, group of observations."
+        },
+        "pimExtends": [
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://purl.org/linked-data/cube#Slice": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#Slice",
+        "pimInterpretation": "http://purl.org/linked-data/cube#Slice",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Slice"
+        },
+        "pimHumanDescription": {
+          "en": "Denotes a subset of a DataSet defined by fixing a subset of the dimensional values, component properties on the Slice"
+        },
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#ObservationGroup",
+          "http://purl.org/linked-data/cube#Attachable",
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://purl.org/linked-data/cube#Attachable": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#Attachable",
+        "pimInterpretation": "http://purl.org/linked-data/cube#Attachable",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Attachable (abstract)"
+        },
+        "pimHumanDescription": {
+          "en": "Abstract superclass for everything that can have attributes and dimensions"
+        },
+        "pimExtends": [
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://purl.org/linked-data/cube#ComponentProperty": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#ComponentProperty",
+        "pimInterpretation": "http://purl.org/linked-data/cube#ComponentProperty",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Component property (abstract)"
+        },
+        "pimHumanDescription": {
+          "en": "Abstract super-property of all properties representing dimensions, attributes or measures"
+        },
+        "pimExtends": [
+          "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://purl.org/linked-data/cube#DimensionProperty": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#DimensionProperty",
+        "pimInterpretation": "http://purl.org/linked-data/cube#DimensionProperty",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Dimension property"
+        },
+        "pimHumanDescription": {
+          "en": "The class of components which represent the dimensions of the cube"
+        },
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#ComponentProperty",
+          "http://purl.org/linked-data/cube#CodedProperty",
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://purl.org/linked-data/cube#AttributeProperty": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#AttributeProperty",
+        "pimInterpretation": "http://purl.org/linked-data/cube#AttributeProperty",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Attribute property"
+        },
+        "pimHumanDescription": {
+          "en": "The class of components which represent attributes of observations in the cube, e.g. unit of measurement"
+        },
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#ComponentProperty",
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://purl.org/linked-data/cube#MeasureProperty": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#MeasureProperty",
+        "pimInterpretation": "http://purl.org/linked-data/cube#MeasureProperty",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Measure property"
+        },
+        "pimHumanDescription": {
+          "en": "The class of components which represent the measured value of the phenomenon being observed"
+        },
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#ComponentProperty",
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://purl.org/linked-data/cube#CodedProperty": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#CodedProperty",
+        "pimInterpretation": "http://purl.org/linked-data/cube#CodedProperty",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Coded property"
+        },
+        "pimHumanDescription": {
+          "en": "Superclass of all coded ComponentProperties"
+        },
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#ComponentProperty",
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://purl.org/linked-data/cube#DataStructureDefinition": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#DataStructureDefinition",
+        "pimInterpretation": "http://purl.org/linked-data/cube#DataStructureDefinition",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Data structure definition"
+        },
+        "pimHumanDescription": {
+          "en": "Defines the structure of a DataSet or slice"
+        },
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#ComponentSet",
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://purl.org/linked-data/cube#ComponentSpecification": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#ComponentSpecification",
+        "pimInterpretation": "http://purl.org/linked-data/cube#ComponentSpecification",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Component specification"
+        },
+        "pimHumanDescription": {
+          "en": "Used to define properties of a component (attribute, dimension etc) which are specific to its usage in a DSD."
+        },
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#ComponentSet",
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://purl.org/linked-data/cube#ComponentSet": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#ComponentSet",
+        "pimInterpretation": "http://purl.org/linked-data/cube#ComponentSet",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Component set"
+        },
+        "pimHumanDescription": {
+          "en": "Abstract class of things which reference one or more ComponentProperties"
+        },
+        "pimExtends": [
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://purl.org/linked-data/cube#SliceKey": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#SliceKey",
+        "pimInterpretation": "http://purl.org/linked-data/cube#SliceKey",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Slice key"
+        },
+        "pimHumanDescription": {
+          "en": "Denotes a subset of the component properties of a DataSet which are fixed in the corresponding slices"
+        },
+        "pimExtends": [
+          "http://purl.org/linked-data/cube#ComponentSet",
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://purl.org/linked-data/cube#HierarchicalCodeList": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://purl.org/linked-data/cube#HierarchicalCodeList",
+        "pimInterpretation": "http://purl.org/linked-data/cube#HierarchicalCodeList",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "Hierarchical Code List"
+        },
+        "pimHumanDescription": {
+          "en": "Represents a generalized hierarchy of concepts which can be used for coding. The hierarchy is defined by one or more roots together with a property which relates concepts in the hierarchy to thier child concept .  The same concepts may be members of multiple hierarchies provided that different qb:parentChildProperty values are used for each hierarchy."
+        },
+        "pimExtends": [
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null,
+        "pimHumanLabelProperty": "http://www.w3.org/2000/01/rdf-schema#label",
+        "pimHumanDescriptionProperty": "http://www.w3.org/2000/01/rdf-schema#comment"
+      },
+      "http://www.w3.org/2002/07/owl#Thing": {
+        "types": [
+          "https://ofn.gov.cz/slovník/pim/Class"
+        ],
+        "iri": "http://www.w3.org/2002/07/owl#Thing",
+        "pimInterpretation": "http://www.w3.org/2002/07/owl#Thing",
+        "pimTechnicalLabel": null,
+        "pimHumanLabel": {
+          "en": "owl:Thing"
+        },
+        "pimHumanDescription": null,
+        "pimExtends": [
+          "http://www.w3.org/2002/07/owl#Thing"
+        ],
+        "pimIsCodelist": false,
+        "pimCodelistUrl": [],
+        "pimRegex": null,
+        "pimExample": null,
+        "pimObjectExample": null
+      }
+    }
+  },
+  "urls": [
+    "https://raw.githubusercontent.com/UKGovLD/publishing-statistical-data/master/specs/src/main/vocab/cube.ttl"
+  ]
+}
