@@ -1,0 +1,1269 @@
+
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <title>StatDCAT-AP 3.0.0 draft</title>
+    <meta name="color-scheme" content="light dark">
+    <script type="application/ld+json">
+      {
+      "@id": "https://statdcat-ap",
+      "@type": [
+        "dsv:VocabularySpecificationDocument",
+        "dsv:ApplicationProfileSpecificationDocument",
+        "adms:AssetDistribution",
+        "prof:ResourceDescriptor"
+      ],
+      "hasArtifact": "",
+      "hasRole": "role:specification",
+      "format": "filetype:HTML",
+      "inSpecificationOf": [
+        {
+          "@id": "https://statdcat-ap/#",
+          "@type": [
+            "owl:Ontology",
+            "prof:Profile"
+          ],
+          "title": {
+            "cs": "StatDCAT-AP 3.0.0 draft"
+          },
+          "isProfileOf": [
+            {
+              "@id": "https://mff-uk.github.io/specifications/dcat-ap#",
+              "title": {},
+              "hasResource": {
+                "hasArtifact": "https://mff-uk.github.io/specifications/dcat-ap/"
+              }
+            },
+            {
+              "title": {
+                "en": "qb"
+              },
+              "hasResource": {
+                "hasArtifact": "https://raw.githubusercontent.com/UKGovLD/publishing-statistical-data/master/specs/src/main/vocab/cube.ttl"
+              }
+            }
+          ],
+          "hasResource": [
+            {
+              "@id": "https://statdcat-ap#spec",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../model.owl.ttl",
+              "hasRole": "role:vocabulary",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": [
+                "http://www.w3.org/2000/01/rdf-schema#",
+                "http://www.w3.org/2002/07/owl"
+              ]
+            },
+            {
+              "@id": "https://statdcat-ap#bdcd8c8e-9c1f-4fb0-ac97-762b2d740ebb",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../bdcd8c8e-9c1f-4fb0-ac97-762b2d740ebb.svg",
+              "hasRole": "role:guidance",
+              "format": "filetype:SVG",
+              "conformsTo": "https://www.w3.org/TR/SVG/"
+            },
+            {
+              "@id": "https://statdcat-ap",
+              "@type": [
+                "dsv:VocabularySpecificationDocument",
+                "dsv:ApplicationProfileSpecificationDocument",
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "",
+              "hasRole": "role:specification",
+              "format": "filetype:HTML"
+            }
+          ]
+        },
+        {
+          "@id": "https://statdcat-ap/#",
+          "@type": [
+            "dsv:ApplicationProfile",
+            "prof:Profile"
+          ],
+          "title": {
+            "cs": "StatDCAT-AP 3.0.0 draft"
+          },
+          "isProfileOf": [
+            {
+              "@id": "https://mff-uk.github.io/specifications/dcat-ap#",
+              "title": {},
+              "hasResource": {
+                "hasArtifact": "https://mff-uk.github.io/specifications/dcat-ap/"
+              }
+            },
+            {
+              "title": {
+                "en": "qb"
+              },
+              "hasResource": {
+                "hasArtifact": "https://raw.githubusercontent.com/UKGovLD/publishing-statistical-data/master/specs/src/main/vocab/cube.ttl"
+              }
+            }
+          ],
+          "hasResource": [
+            {
+              "@id": "https://statdcat-ap#dsv",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../model.owl.ttl",
+              "hasRole": "role:constraints",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": [
+                "prof:Profile",
+                "dsv:ApplicationProfile"
+              ]
+            },
+            {
+              "@id": "https://statdcat-ap#shacl",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../shacl.ttl",
+              "hasRole": "role:constraints",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "https://www.w3.org/TR/shacl/"
+            },
+            {
+              "@id": "https://statdcat-ap#bdcd8c8e-9c1f-4fb0-ac97-762b2d740ebb",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../bdcd8c8e-9c1f-4fb0-ac97-762b2d740ebb.svg",
+              "hasRole": "role:guidance",
+              "format": "filetype:SVG",
+              "conformsTo": "https://www.w3.org/TR/SVG/"
+            },
+            {
+              "@id": "https://statdcat-ap",
+              "@type": [
+                "dsv:VocabularySpecificationDocument",
+                "dsv:ApplicationProfileSpecificationDocument",
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "",
+              "hasRole": "role:specification",
+              "format": "filetype:HTML"
+            }
+          ]
+        }
+      ],
+      "@context": {
+        "@version": 1.1,
+        "prof": "http://www.w3.org/ns/dx/prof/",
+        "role": "prof:role/",
+        "dsv": "https://w3id.org/dsv#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "adms": "http://www.w3.org/ns/adms#",
+        "filetype": "http://publications.europa.eu/resource/authority/file-type/",
+        "title": {
+          "@id": "http://purl.org/dc/terms/title",
+          "@container": "@language"
+        },
+        "description": {
+          "@id": "http://purl.org/dc/terms/description",
+          "@container": "@language"
+        },
+        "conformsTo": {
+          "@id": "http://purl.org/dc/terms/conformsTo",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "format": {
+          "@id": "http://purl.org/dc/terms/format",
+          "@type": "@id"
+        },
+        "hasRole": {
+          "@id": "prof:hasRole",
+          "@type": "@id"
+        },
+        "hasArtifact": {
+          "@id": "prof:hasArtifact",
+          "@type": "@id"
+        },
+        "inSpecificationOf": {
+          "@reverse": "prof:hasResource",
+          "@type": "@id",
+          "@context": {
+            "title": {
+              "@id": "http://purl.org/dc/terms/title",
+              "@container": "@language"
+            },
+            "description": {
+              "@id": "http://purl.org/dc/terms/description",
+              "@container": "@language"
+            },
+            "hasToken": {
+              "@id": "prof:hasToken",
+              "@type": "xsd:token"
+            },
+            "isProfileOf": {
+              "@id": "prof:isProfileOf",
+              "@container": "@set",
+              "@context": {
+                "title": {
+                  "@id": "http://purl.org/dc/terms/title",
+                  "@container": "@language"
+                },
+                "hasResource": {
+                  "@id": "prof:hasResource",
+                  "@container": "@set",
+                  "@context": {
+                    "hasArtifact": {
+                      "@id": "prof:hasArtifact",
+                      "@type": "@id"
+                    }
+                  }
+                }
+              }
+            },
+            "hasResource": {
+              "@id": "prof:hasResource",
+              "@container": "@set",
+              "@context": {
+                "conformsTo": {
+                  "@id": "http://purl.org/dc/terms/conformsTo",
+                  "@type": "@id",
+                  "@container": "@set"
+                },
+                "format": {
+                  "@id": "http://purl.org/dc/terms/format",
+                  "@type": "@id"
+                },
+                "hasRole": {
+                  "@id": "prof:hasRole",
+                  "@type": "@id"
+                },
+                "hasArtifact": {
+                  "@id": "prof:hasArtifact",
+                  "@type": "@id"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    </script>
+    <script
+      src="https://www.w3.org/Tools/respec/respec-w3c"
+      class="remove"
+      defer
+    ></script>
+    <script class="remove">
+    // All config options at https://respec.org/docs/
+    var respecConfig = {
+      specStatus: "base",
+      editors: [{ name: "Dataspecer", url: "https://dataspecer.com" }],
+      //github: "some-org/mySpec",
+      shortName: "todo",
+      historyURI: null,
+      //thisVersion: "https://xx.github.io/yy/",
+      //latestVersion: "https://xx.github.io/yy/",
+      //publishDate: "2025-09-29",
+      //github: "https://github.com/org/repo",
+      //xref: "web-platform",
+      //group: "my-working-group",
+      //otherLinks: [{
+      //    key: "Repository",
+      //    data: [{
+      //        value: "GitHub",
+      //        href: "https://github.com/org/repo"
+      //    }],
+      //}],
+      localBiblio: {
+            "DCAT-AP": {
+                title: "DCAT Application Profile for data portals in Europe",
+                href: "https://semiceu.github.io/DCAT-AP/releases/3.0.1/",
+                date: "2024"
+            },
+            "GeoDCAT-AP": {
+                title: "GeoDCAT Application Profile for data portals in Europe",
+                href: "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0/",
+                date: "2024"
+            },
+            "DCAT-AP-HVD": {
+                title: "DCAT-AP HVD Application Profile",
+                href: "https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/",
+                date: "2024"
+            }
+        },};</script>
+    
+    <style>
+      .figure img, .sidefigure img, figure img, .figure object, .sidefigure object, figure object, img, .img {
+        max-width: 100%;
+        margin: auto;
+        height: auto;
+      }
+    
+      table.simple {
+        margin: auto;
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+    
+      table.simple th {
+        padding: 3px 10px;
+        text-align: left;
+      }
+    
+      table.simple td {
+        border-top: 1px solid #ddd;
+        padding: 3px 10px;
+      }
+    </style>  </head>
+  <body>
+    <p class="copyright"></p>
+    <section id="abstract">
+      <p>
+      Tento soubor dokumentuje
+      <strong>StatDCAT-AP 3.0.0 draft</strong>.</p>
+    </section>
+    <section>
+      <h2>Úvod</h2>
+      <p>Toto je úvod</p>
+      </section>
+    <section>
+      <h2>Přehled</h2>
+
+        <a href="../bdcd8c8e-9c1f-4fb0-ac97-762b2d740ebb.svg">
+          <figure>
+            <img src="../bdcd8c8e-9c1f-4fb0-ac97-762b2d740ebb.svg" alt="Main view" />
+            <figcaption>Main view</figcaption>
+          </figure>
+        </a>
+    </section>
+
+
+
+      <section>
+          <h2>Profily tříd</h2>
+
+          <section id="Concept">
+            <h4>Concept (@en)</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://statdcat-ap/#Concept">https://statdcat-ap/#Concept</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Concept (@en)</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>An idea or notion; a unit of thought. (@en)</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                
+                profil
+                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Concept">Concept (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Concept">dcat-ap:Concept</a>)
+                  <br />Definice: <i>An idea or notion; a unit of thought.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                třídu
+                
+                <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept (@en)</a> (<a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+              <tr>
+                <td>Popis použití v profilu</td>
+                <td>In DCAT-AP, a Concept is used to denote codes within a codelist. In section 10. Controlled Vocabularies the expectations are elaborated in more detail. (@en)</td>
+              </tr>
+            </table>
+          
+              <p>Zpětné asociace</p>
+              <ul>
+                  <li>z domény <a href="#Dataflow"></a> → <a href="#Dataflow.dataflowCategory"></a></li>
+                  <li>z domény <a href="#Dataset"></a> → <a href="#Dataset.theme"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="DataStructureDefinition">
+            <h4>Data structure definition (@en)</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="http://purl.org/linked-data/cube#DataStructureDefinition">http://purl.org/linked-data/cube#DataStructureDefinition</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://statdcat-ap/#DataStructureDefinition">https://statdcat-ap/#DataStructureDefinition</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Data structure definition (@en)</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Defines the structure of a DataSet or slice (@en)</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                třídu
+                
+                <a href="http://purl.org/linked-data/cube#DataStructureDefinition">Data structure definition (@en)</a> (<a href="http://purl.org/linked-data/cube#DataStructureDefinition">http://purl.org/linked-data/cube#DataStructureDefinition</a>)
+                  <br />Definice: <i>Defines the structure of a DataSet or slice</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="http://purl.org/linked-data/cube#ComponentSet">Component set (@en)</a> (<a href="http://purl.org/linked-data/cube#ComponentSet">http://purl.org/linked-data/cube#ComponentSet</a>)
+                  <br />Definice: <i>Abstract class of things which reference one or more ComponentProperties</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Zpětné asociace</p>
+              <ul>
+                  <li>z domény <a href="#Dataset"></a> → <a href="#Dataset.dataStructureDefinition"></a></li>
+                  <li>z domény <a href="#Dataflow"></a> → <a href="#Dataflow.dataflowDsd"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="Dataset">
+            <h4>Datová sada</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://statdcat-ap/#Dataset">https://statdcat-ap/#Dataset</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Datová sada</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                
+                profil
+                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset">Datová sada</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset">dcat-ap:Dataset</a>)
+                  <br />Definice: <i>Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                
+                profil
+                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset">Datová sada</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset">dcat-dap:Dataset</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                třídu
+                
+                <a href="http://www.w3.org/ns/dcat#Dataset">Datová sada</a> (<a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a>)
+                  <br />Definice: <i>Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Katalogizovaný zdroj</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definice: <i>Zdroj publikovaný či řízený jediným činitelem.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                      <li>
+                                  specializuje
+                
+                profil
+                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Resource">Katalogizovaný zdroj</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                třídu
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Katalogizovaný zdroj</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definice: <i>Zdroj publikovaný či řízený jediným činitelem.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                      <li>
+                                  specializuje
+                
+                profil
+                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#CataloguedResource">Katalogizovaný zdroj</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#CataloguedResource">dcat-ap:CataloguedResource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                
+                profil
+                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Resource">Katalogizovaný zdroj</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                třídu
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Katalogizovaný zdroj</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definice: <i>Zdroj publikovaný či řízený jediným činitelem.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+              <tr>
+                <td>Popis použití v profilu</td>
+                <td>If a Dataset is used as part of a Dataset Series, the usage of the properties listed below must be coherent with the associated Dataset Series. For this usage, consult the guidelines in section 14. General usage guidelines. (@en)</td>
+              </tr>
+            </table>
+          
+              <p>Zpětné asociace</p>
+              <ul>
+                  <li>z domény <a href="#Dataflow"></a> → <a href="#Catalogue.dataset"></a></li>
+              </ul>
+          
+              <section id="Dataset.dataStructureDefinition">
+                <h4>data structure definition (@en)</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://statdcat-ap/#dataStructureDefinition">https://statdcat-ap/#dataStructureDefinition</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://statdcat-ap/#Dataset.dataStructureDefinition">https://statdcat-ap/#Dataset.dataStructureDefinition</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>data structure definition (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#Dataset">Datová sada</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#DataStructureDefinition">Data structure definition (@en)</a>
+              
+                          [0..1]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#dataStructureDefinition">data structure definition (@en)</a> (<a href="https://statdcat-ap/#dataStructureDefinition">https://statdcat-ap/#dataStructureDefinition</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="Dataset.theme">
+                <h4>téma</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="http://www.w3.org/ns/dcat#theme">dcat:theme</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://statdcat-ap/#Dataset.theme">https://statdcat-ap/#Dataset.theme</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>téma</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Hlavní téma zdroje. Zdroj může mít více témat.</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#Dataset">Datová sada</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#Concept">Concept (@en)</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    
+                    profil
+                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.theme">téma</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.theme">dcat-ap:Dataset.theme</a>)
+                      <br />Definice: <i>Hlavní téma zdroje. Zdroj může mít více témat.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiluje
+                    
+                    profil
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_theme">téma</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.theme-category">dcat-dap:CatalogedResource.theme-category</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiluje
+                    vlastnost
+                    
+                    <a href="http://www.w3.org/ns/dcat#theme">téma</a> (<a href="http://www.w3.org/ns/dcat#theme">dcat:theme</a>)
+                      <br />Definice: <i>Hlavní téma zdroje. Zdroj může mít více témat.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializuje
+                    vlastnost
+                    
+                    <a href="http://purl.org/dc/terms/subject">Subject (@en)</a> (<a href="http://purl.org/dc/terms/subject">dcterms:subject</a>)
+                      <br />Definice: <i>A topic of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Popis použití v profilu</td>
+                    <td>A Dataset may be associated with multiple themes. (@en)</td>
+                  </tr>
+                </table>
+              </section>
+          </section>          <section id="Dataflow">
+            <h4>Katalog</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://statdcat-ap/#Dataflow">https://statdcat-ap/#Dataflow</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Katalog</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Řízená kolekce metadat o datových sadách a datových službách</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                
+                profil
+                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue">Katalog</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Catalogue">dcat-ap:Catalogue</a>)
+                  <br />Definice: <i>Řízená kolekce metadat o datových sadách a datových službách</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                
+                profil
+                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog">Katalog</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Catalog">dcat-dap:Catalog</a>)
+                  <br />Definice: <i>Řízená kolekce metadat o datových sadách a datových službách</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                třídu
+                
+                <a href="http://www.w3.org/ns/dcat#Catalog">Katalog</a> (<a href="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</a>)
+                  <br />Definice: <i>Řízená kolekce metadat o datových sadách a datových službách</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="http://www.w3.org/ns/dcat#Dataset">Datová sada</a> (<a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a>)
+                  <br />Definice: <i>Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Katalogizovaný zdroj</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definice: <i>Zdroj publikovaný či řízený jediným činitelem.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                      <li>
+                                  specializuje
+                
+                profil
+                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset">Datová sada</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset">dcat-dap:Dataset</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                třídu
+                
+                <a href="http://www.w3.org/ns/dcat#Dataset">Datová sada</a> (<a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a>)
+                  <br />Definice: <i>Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Katalogizovaný zdroj</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definice: <i>Zdroj publikovaný či řízený jediným činitelem.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                      <li>
+                                  specializuje
+                
+                profil
+                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Resource">Katalogizovaný zdroj</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                třídu
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Katalogizovaný zdroj</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definice: <i>Zdroj publikovaný či řízený jediným činitelem.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+              <tr>
+                <td>Popis použití v profilu</td>
+                <td>A Web-based data catalog is typically represented as a single instance of this class.
+          Datasets and data services are examples of resources in the context of a data catalog. (@en)</td>
+              </tr>
+            </table>
+          
+          
+              <section id="Dataflow.dataflowCategory">
+                <h4>Dataflow category (@en)</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://statdcat-ap/#dataflowCategory">https://statdcat-ap/#dataflowCategory</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://statdcat-ap/#Dataflow.dataflowCategory">https://statdcat-ap/#Dataflow.dataflowCategory</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>Dataflow category (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#Dataflow">Katalog</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#Concept">Concept (@en)</a>
+              
+                          [1..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#dataflowCategory">Dataflow category (@en)</a> (<a href="https://statdcat-ap/#dataflowCategory">https://statdcat-ap/#dataflowCategory</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="Dataflow.dataflowDsd">
+                <h4>Dataflow DSD (@en)</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://statdcat-ap/#dataflowDsd">https://statdcat-ap/#dataflowDsd</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://statdcat-ap/#Dataflow.dataflowDsd">https://statdcat-ap/#Dataflow.dataflowDsd</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>Dataflow DSD (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#Dataflow">Katalog</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#DataStructureDefinition">Data structure definition (@en)</a>
+              
+                          [1..1]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#dataflowDsd">Dataflow DSD (@en)</a> (<a href="https://statdcat-ap/#dataflowDsd">https://statdcat-ap/#dataflowDsd</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="Catalogue.dataset">
+                <h4>datová sada</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="http://www.w3.org/ns/dcat#dataset">dcat:dataset</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://statdcat-ap/#Catalogue.dataset">https://statdcat-ap/#Catalogue.dataset</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>datová sada</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Kolekce dat, která je katalogizována v katalogu.</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#Dataflow">Katalog</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#Dataset">Datová sada</a>
+              
+                          [1..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    
+                    profil
+                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.dataset">datová sada</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset">dcat-ap:Catalogue.dataset</a>)
+                      <br />Definice: <i>Kolekce dat, která je katalogizována v katalogu.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiluje
+                    
+                    profil
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_dataset">datová sada</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Catalog.dataset">dcat-dap:Catalog.dataset</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiluje
+                    vlastnost
+                    
+                    <a href="http://www.w3.org/ns/dcat#dataset">datová sada</a> (<a href="http://www.w3.org/ns/dcat#dataset">dcat:dataset</a>)
+                      <br />Definice: <i>Kolekce dat, která je katalogizována v katalogu.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializuje
+                    vlastnost
+                    
+                    <a href="http://www.w3.org/ns/dcat#resource">resource (@en)</a> (<a href="http://www.w3.org/ns/dcat#resource">dcat:resource</a>)
+                      <br />Definice: <i>A resource that is listed in the catalog.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializuje
+                    vlastnost
+                    
+                    <a href="http://purl.org/dc/terms/hasPart">Has Part (@en)</a> (<a href="http://purl.org/dc/terms/hasPart">dcterms:hasPart</a>)
+                      <br />Definice: <i>A related resource that is included either physically or logically in the described resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializuje
+                    vlastnost
+                    
+                    <a href="http://purl.org/dc/terms/relation">Relation (@en)</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
+                      <br />Definice: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Popis použití v profilu</td>
+                    <td>As empty Catalogues are usually indications of problems, this property should be combined with the property service to implement an empty Catalogue check. (@en)</td>
+                  </tr>
+                </table>
+              </section>
+          </section>      </section>
+
+
+      <section>
+        <h2>Vlastnosti</h2>
+            <section id="dataStructureDefinition">
+              <h4>data structure definition (@en)</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://statdcat-ap/#dataStructureDefinition">https://statdcat-ap/#dataStructureDefinition</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>data structure definition (@en)</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/dcat#Dataset">Datová sada</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="http://purl.org/linked-data/cube#DataStructureDefinition">Data structure definition (@en)</a>
+            
+                    
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="dataflowCategory">
+              <h4>Dataflow category (@en)</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://statdcat-ap/#dataflowCategory">https://statdcat-ap/#dataflowCategory</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Dataflow category (@en)</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/dcat#Catalog">Katalog</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concept"><i>beze jména</i></a>
+            
+                    
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="dataflowDsd">
+              <h4>Dataflow DSD (@en)</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://statdcat-ap/#dataflowDsd">https://statdcat-ap/#dataflowDsd</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Dataflow DSD (@en)</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="http://www.w3.org/ns/dcat#Catalog">Katalog</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="http://purl.org/linked-data/cube#DataStructureDefinition">Data structure definition (@en)</a>
+            
+                    
+                  </td>
+                  </tr>
+              </table>
+            </section>      </section>
+
+
+    <section>
+      <h2>Použité prefixy</h2>
+      <table id="table-namespaces" class="simple">
+        <thead><tr><th>Prefix</th><th>Namespace IRI</th></tr></thead>
+        <tbody>
+            <tr><td><code>skos</code></td><td><a href="http://www.w3.org/2004/02/skos/core#"><code>http://www.w3.org/2004/02/skos/core#</code></a></td></tr>
+            <tr><td><code>dcat-ap</code></td><td><a href="https://mff-uk.github.io/specifications/dcat-ap#"><code>https://mff-uk.github.io/specifications/dcat-ap#</code></a></td></tr>
+            <tr><td><code>dcat</code></td><td><a href="http://www.w3.org/ns/dcat#"><code>http://www.w3.org/ns/dcat#</code></a></td></tr>
+            <tr><td><code>dcat-dap</code></td><td><a href="https://mff-uk.github.io/specifications/dcat-dap#"><code>https://mff-uk.github.io/specifications/dcat-dap#</code></a></td></tr>
+            <tr><td><code>dcterms</code></td><td><a href="http://purl.org/dc/terms/"><code>http://purl.org/dc/terms/</code></a></td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="přílohy">
+      <h2>Přílohy</h2>
+        <p>Součástí této specifikace jsou následující přílohy.</p>
+        <table class="def">
+        <thead>
+          <tr>
+            <th>Příloha</th>
+            <th>Odkaz</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Slovník</td>
+              <td><a href="../model.owl.ttl">../model.owl.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Aplikační profil</td>
+              <td><a href="../model.owl.ttl">../model.owl.ttl</a></td>
+            </tr>
+            <tr>
+              <td>SHACL validační pravidla</td>
+              <td><a href="../shacl.ttl">../shacl.ttl</a></td>
+            </tr>
+            <tr><td>PlantUML diagram</td><td><a href="../conceptual-model.plantuml">../conceptual-model.plantuml</a></td></tr>
+            <tr><td>Konceptuální diagram</td><td><a href="../conceptual-model.svg">../conceptual-model.svg</a></td></tr>
+            <tr><td>Dokumentace</td><td><a href="">#</a></td></tr>
+        </tbody>
+      </table>
+    </section>  </body>
+</html>

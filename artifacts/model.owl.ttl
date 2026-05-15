@@ -1,0 +1,169 @@
+@prefix : <https://statdcat-ap/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dsv: <https://w3id.org/dsv#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix cardinality: <https://w3id.org/dsv/cardinality#>.
+@prefix requirement: <https://w3id.org/dsv/requirement-level#>.
+@prefix role: <https://w3id.org/dsv/class-role#>.
+@prefix prof: <http://www.w3.org/ns/dx/prof/>.
+
+
+<https://statdcat-ap/#> a prof:Profile, dsv:ApplicationProfile.
+:Dataflow dct:isPartOf <https://statdcat-ap/#>;
+    a dsv:TermProfile;
+    skos:prefLabel "Dataflow"@en, "Catalogo"@it, "Catalogue"@fr, "Catálogo"@es, "Katalog"@cs, "Κατάλογος"@el, "فهرس قوائم البيانات"@ar, "カタログ"@ja, "Katalog"@da;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>
+];
+    a dsv:ClassProfile.
+:Dataset dct:isPartOf <https://statdcat-ap/#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset>
+];
+    a dsv:ClassProfile.
+:DataStructureDefinition dct:isPartOf <https://statdcat-ap/#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <http://purl.org/linked-data/cube#DataStructureDefinition>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <http://purl.org/linked-data/cube#DataStructureDefinition>
+];
+    a dsv:ClassProfile;
+    dsv:class <http://purl.org/linked-data/cube#DataStructureDefinition>.
+:Concept dct:isPartOf <https://statdcat-ap/#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Concept>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Concept>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Concept>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Concept>
+];
+    a dsv:ClassProfile.
+
+<https://statdcat-ap/#Catalogue.dataset> dct:isPartOf <https://statdcat-ap/#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>
+];
+    dsv:cardinality cardinality:1n;
+    dsv:domain :Dataflow;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Dataset.
+
+<https://statdcat-ap/#Dataflow.dataflowCategory> dct:isPartOf <https://statdcat-ap/#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource :dataflowCategory
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource :dataflowCategory
+];
+    dsv:cardinality cardinality:1n;
+    dsv:property :dataflowCategory;
+    dsv:domain :Dataflow;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Concept.
+
+<https://statdcat-ap/#Dataflow.dataflowDsd> dct:isPartOf <https://statdcat-ap/#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource :dataflowDsd
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource :dataflowDsd
+];
+    dsv:cardinality cardinality:11;
+    dsv:property :dataflowDsd;
+    dsv:domain :Dataflow;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :DataStructureDefinition.
+
+<https://statdcat-ap/#Dataset.dataStructureDefinition> dct:isPartOf <https://statdcat-ap/#>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource :dataStructureDefinition
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource :dataStructureDefinition
+];
+    dsv:cardinality cardinality:01;
+    dsv:property :dataStructureDefinition;
+    dsv:domain :Dataset;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :DataStructureDefinition.
+
+<https://statdcat-ap/#Dataset.theme> dct:isPartOf <https://statdcat-ap/#>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.theme>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.theme>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.theme>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.theme>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Concept.
